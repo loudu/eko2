@@ -107,16 +107,32 @@ main{
 .media{
     grid-column-start: 2;
     grid-column-end: span 5;
-
+ 
 }
-
-
 
 .media img{
     width:120px;
     height:120px;
 }
 
+.prez{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    column-gap:2%;
+    grid-template-areas: 
+      "logo . text text"
+    ;
+
+}
+.logo{
+    grid-area:logo;
+    justify-items:center;
+}
+
+.text{
+grid-area:text;
+}
 
 
 button{
