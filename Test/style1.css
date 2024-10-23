@@ -1,0 +1,146 @@
+
+*{
+    margin:0;
+    padding:0;  
+     box-sizing:border-box;  
+}
+body{
+    background-color: black;
+    color:white;
+}
+
+header{
+    width:100%;
+    height:auto;
+    background-image: url('img/social-media-3758364_1920.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+}
+h1{
+    font-family:'gagalin';
+    font-size:45px;
+    margin-left:3%;
+}
+
+nav{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    height:150px;
+
+}
+
+.nav-menu .active {
+left:0;
+}
+/* style menu burger */
+
+li{
+    list-style:none;
+}
+
+.bar{
+    display:block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+}
+
+.hamburger.active .bar:nth-child(2) {
+opacity:0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+transform:translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform:translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu .active {
+        left:0;
+        }
+
+.nav-menu{
+    position:fixed;
+    left:-100%;
+    top:7Opx;
+    gap:0;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    transition:0.3s;
+}
+
+
+/* fin style menu burger*/
+
+
+
+p{
+    font-family:'faster One';
+    text-align:right;
+    font-size:50px;
+    margin:0 30%;
+    padding:10% 0;
+    letter-spacing: .2rem;
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    align-content:space-around;  
+    gap:150px;
+    flex-wrap;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    color:gray;
+    font-size:35px;
+    text-transform: font-size;
+}
+
+.theme{
+
+    display:flex;
+    justify-content:center;
+    align-content:space-around;
+    flex-flow:column;
+}
+
+.support{
+    display:flex;
+    justify-content:center;
+    align-content:space-around;
+    flex-flow:column;
+}
+h2{
+    font-size:30px;
+    margin-left:3%;
+    font-family:'faster One';
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+main img{ 
+
+    width: 100px;
+    height:100px;
+    padding:10px;
+}
+
+.divide {
+    align-self: center;
+    gap:150px;
+    flex-wrap;
+}
+
