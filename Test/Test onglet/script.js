@@ -1,5 +1,5 @@
 let tabs = document.querySelectorAll(".theme img");
-let tabContents = document.querySelectorAll(".categorie .nav-tab .media");
+let tabContents = document.querySelectorAll(".categorie .media");
 
 tabs.forEach((theme, index) => {
     theme.addEventListener("click", () => {
