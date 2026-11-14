@@ -75,6 +75,9 @@ main {
 .theme__border--active {
     border-bottom: 3px solid white;
     padding-bottom: 15px; /* barre 10px plus bas */
+    /* barre raccourcie de 3px de chaque côté (114px + 2 x 3px = 120px) */
+    width: 114px;
+    margin: 0 3px;
 }
 
 /* Thème actif légèrement grisé */
