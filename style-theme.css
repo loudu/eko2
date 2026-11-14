@@ -17,7 +17,7 @@ header {
 }
 
 h1 {
-    font-family: 'gagalin';
+    font-family: 'gagalin', 'Lilita One', sans-serif;
     font-size: 45px;
     margin-left: 3%;
 }
@@ -128,7 +128,7 @@ h2 {
 }
 
 .button-more span{
-    font-family: 'gagalin';
+    font-family: 'gagalin', 'Lilita One', sans-serif;
     font-size:18px;
 
   
@@ -161,7 +161,7 @@ button a:hover {
 .rs {
     display: flex;
     justify-content: space-between;
-    font-family:'gagalin';
+    font-family: 'gagalin', 'Lilita One', sans-serif;
 }
 
 .rs img {
