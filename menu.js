@@ -32,9 +32,9 @@ document.addEventListener("keydown", (event) => {
 // Souligne la page en cours dans le menu
 const currentPage = location.pathname.split("/").pop() || "index.html";
 document.querySelectorAll(".nav-link").forEach((link) => {
-    // "Thèmes" reste souligné sur toutes les pages theme-*.html
-    const section = link.getAttribute("href").replace(".html", "");
-    if (currentPage === link.getAttribute("href") || currentPage.startsWith(section + "-")) {
+    // "Thèmes" et "Support" restent soulignés sur toutes les pages de leur section
+    const section = link.dataset.section;
+    if (currentPage === link.getAttribute("href") || (section && currentPage.startsWith(section))) {
         link.setAttribute("aria-current", "page");
     }
 });
