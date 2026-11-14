@@ -74,6 +74,12 @@ main {
 
 .theme__border--active {
     border-bottom: 3px solid white;
+    padding-bottom: 15px; /* barre 10px plus bas */
+}
+
+/* Thème actif légèrement grisé */
+.theme__border--active img {
+    filter: brightness(0.75);
 }
 
 .theme img {
