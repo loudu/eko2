@@ -61,7 +61,17 @@
    </main>
       <section class="article une" aria-labelledby="une-titre">
          <h2 id="une-titre">A la une</h2>
-         <div class="une__slots" id="une"></div>
+         <div class="une__carrousel">
+            <button type="button" class="une__fleche une__fleche--prec" aria-label="Articles précédents" hidden>
+               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="une__fenetre">
+               <div class="une__piste" id="une"></div>
+            </div>
+            <button type="button" class="une__fleche une__fleche--suiv" aria-label="Articles suivants" hidden>
+               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+         </div>
          <small class="une__source">Derniers articles publiés par les médias, via leurs flux RSS. Cliquez pour lire l'article sur le site du média.</small>
       </section>
    

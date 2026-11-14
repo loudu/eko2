@@ -1,28 +1,41 @@
 /* Section « À la une » : derniers articles des médias */
 
 .une {
+    --carte: 286px;     /* largeur d'une carte */
+    --ecart: 110px;     /* espace entre les cartes */
+    --visibles: 3;      /* nombre de cartes visibles */
     padding: 0 16px 6%;
 }
 
-.une__slots {
+.une__carrousel {
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
-    gap: 48px 110px;
+    gap: 24px;
     margin-top: 40px;
 }
 
-.une__slot {
-    position: relative;
-    width: 286px;
+.une__fenetre {
+    width: calc(var(--visibles) * var(--carte) + (var(--visibles) - 1) * var(--ecart));
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.une__piste {
+    display: flex;
+    gap: var(--ecart);
+    transition: transform .45s ease;
+    touch-action: pan-y;
 }
 
 .une__carte,
 .une__carte:hover {
     display: flex;
+    flex: 0 0 var(--carte);
     flex-direction: column;
     align-items: center;
     gap: 14px;
+    width: var(--carte);
     color: white;
     font-size: inherit;
     text-decoration: none;
@@ -31,7 +44,7 @@
 
 .une__image {
     display: block;
-    width: 286px;
+    width: 100%;
     height: 224px;
     margin-bottom: 12px;
     object-fit: cover;
@@ -74,33 +87,24 @@
 
 .une__carte:focus-visible .une__image {
     outline: 2px solid white;
-    outline-offset: 3px;
+    outline-offset: -3px;
 }
 
+/* Flèches de part et d'autre de la section */
 .une__fleche {
-    position: absolute;
-    top: 112px; /* milieu de l'image */
-    z-index: 1;
     display: flex;
+    flex: 0 0 52px;
     align-items: center;
     justify-content: center;
     width: 52px;
     height: 52px;
+    margin-top: 86px; /* centrées sur les images (224px / 2 - 52px / 2) */
     padding: 0;
     color: white;
     background-color: black;
     border: none;
     border-radius: 50%;
-    transform: translateY(-50%);
     cursor: pointer;
-}
-
-.une__fleche--prec {
-    left: -26px;
-}
-
-.une__fleche--suiv {
-    right: -26px;
 }
 
 .une__fleche svg {
@@ -128,4 +132,28 @@
     font-size: 13px;
     text-align: center;
     color: #999;
+}
+
+@media (max-width: 1260px) {
+    .une {
+        --visibles: 2;
+        --ecart: 80px;
+    }
+}
+
+@media (max-width: 820px) {
+    .une {
+        --visibles: 1;
+        --carte: min(286px, calc(100vw - 32px - 2 * 52px - 2 * 12px));
+    }
+
+    .une__carrousel {
+        gap: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .une__piste {
+        transition: none;
+    }
 }
