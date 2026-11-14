@@ -6,6 +6,16 @@ nav {
     align-items: flex-start;
 }
 
+/* Logo EKO cliquable (pages hors accueil) : même marge que sur l'accueil.
+   La marge de 3 % est portée par le lien pour être calculée sur la largeur de la page. */
+nav > a {
+    margin-left: 3%;
+}
+
+nav > a > h1 {
+    margin-left: 0;
+}
+
 .hamburger {
     position: relative;
     z-index: 20;
