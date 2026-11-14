@@ -197,3 +197,28 @@ button a:hover {
 #second-list {
     grid-row-start: 2;
 }
+/* Icônes de thème cliquables */
+.theme__border a,
+.theme__border a:hover {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.theme__border a:hover img,
+.theme__border a:focus-visible img {
+    filter: brightness(0.85);
+}
+
+.theme__border--active a:hover img {
+    filter: brightness(0.75);
+}
+
+/* Thème sans média */
+.empty {
+    font-family: 'gagalin', 'Lilita One', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    padding: 5% 0 10%;
+    margin: 0;
+}
