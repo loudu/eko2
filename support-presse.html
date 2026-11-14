@@ -5,6 +5,7 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="style-theme.css" />
+   <link rel="stylesheet" href="menu.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Lilita+One&display=swap" rel="stylesheet">
@@ -18,6 +19,18 @@
          <a href="index.html">
             <h1>EKO</h1>
          </a>
+         <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </button>
+         <ul class="nav-menu" id="nav-menu">
+            <li><a class="nav-link" href="index.html">Accueil</a></li>
+            <li><a class="nav-link" href="theme.html">Politique</a></li>
+            <li><a class="nav-link" href="theme-culture.html">Culture</a></li>
+            <li><a class="nav-link" href="theme-eco.html">Écologie</a></li>
+            <li><a class="nav-link" href="support-presse.html">Presse écrite</a></li>
+         </ul>
       </nav>
       <p>Trouve ton média <br> par support</p>
    </header>
@@ -120,4 +133,5 @@
    </main>
    <footer>
    </footer>
+   <script src="menu.js"></script>
 </body>
