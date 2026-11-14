@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
  <link rel="stylesheet" href="style1.css"/>
    <link rel="stylesheet" href="menu.css" />
+   <link rel="stylesheet" href="une.css" />
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Lilita+One&display=swap" rel="stylesheet">
@@ -58,12 +59,15 @@
          </div>  
       </div>
    </main>
-      <div class="article">
-         <h2>A la une</h2>
-      </div>
+      <section class="article une" aria-labelledby="une-titre">
+         <h2 id="une-titre">A la une</h2>
+         <div class="une__slots" id="une"></div>
+         <small class="une__source">Derniers articles publiés par les médias, via leurs flux RSS. Cliquez pour lire l'article sur le site du média.</small>
+      </section>
    
     <footer>
 
     </footer>
     <script src="menu.js"></script>
+    <script src="une.js"></script>
 </body>

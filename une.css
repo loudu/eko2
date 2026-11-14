@@ -1,0 +1,131 @@
+/* Section « À la une » : derniers articles des médias */
+
+.une {
+    padding: 0 16px 6%;
+}
+
+.une__slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px 110px;
+    margin-top: 40px;
+}
+
+.une__slot {
+    position: relative;
+    width: 286px;
+}
+
+.une__carte,
+.une__carte:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    color: white;
+    font-size: inherit;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+}
+
+.une__image {
+    display: block;
+    width: 286px;
+    height: 224px;
+    margin-bottom: 12px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, .85);
+    border-radius: 18px;
+    background-color: #111;
+}
+
+/* Quand l'article n'a pas d'image : logo du média */
+.une__image--logo {
+    object-fit: contain;
+    padding: 32px;
+    background-color: white;
+}
+
+.une__titre {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.une__media {
+    font-size: 18px;
+    color: rgba(255, 255, 255, .85);
+}
+
+.une__carte[href]:hover .une__titre,
+.une__carte:focus-visible .une__titre {
+    text-decoration: underline;
+}
+
+.une__carte:focus-visible {
+    outline: none;
+}
+
+.une__carte:focus-visible .une__image {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.une__fleche {
+    position: absolute;
+    top: 112px; /* milieu de l'image */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.une__fleche--prec {
+    left: -26px;
+}
+
+.une__fleche--suiv {
+    right: -26px;
+}
+
+.une__fleche svg {
+    width: 26px;
+    height: 26px;
+}
+
+.une__fleche:hover {
+    background-color: #222;
+}
+
+.une__fleche:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.une__fleche[hidden] {
+    display: none;
+}
+
+.une__source {
+    display: block;
+    margin-top: 40px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #999;
+}
