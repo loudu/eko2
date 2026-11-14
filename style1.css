@@ -92,3 +92,29 @@ main img{
     flex-wrap;
 }
 
+
+/* Animation au survol des icônes Thème et Support */
+main img {
+    transition: transform .25s ease, filter .25s ease;
+}
+
+main img:hover {
+    transform: translateY(-6px) scale(1.12);
+    filter: drop-shadow(0 8px 14px rgba(255, 255, 255, .3));
+}
+
+/* Évite que le lien autour d'une icône change de taille au survol */
+.divide a,
+.divide a:hover {
+    font-size: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    main img {
+        transition: none;
+    }
+
+    main img:hover {
+        transform: none;
+    }
+}
