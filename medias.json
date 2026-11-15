@@ -1,0 +1,211 @@
+{
+  "themes": [
+    {
+      "id": "politique",
+      "nom": "Politique"
+    },
+    {
+      "id": "culture",
+      "nom": "Culture"
+    },
+    {
+      "id": "histoire",
+      "nom": "Histoire"
+    },
+    {
+      "id": "conflit",
+      "nom": "Conflit"
+    },
+    {
+      "id": "monde",
+      "nom": "Monde"
+    },
+    {
+      "id": "ecologie",
+      "nom": "Écologie"
+    }
+  ],
+  "supports": [
+    {
+      "id": "presse",
+      "nom": "Presse écrite"
+    },
+    {
+      "id": "streaming",
+      "nom": "Streaming"
+    },
+    {
+      "id": "podcast",
+      "nom": "Podcast"
+    },
+    {
+      "id": "personne",
+      "nom": "Personne"
+    },
+    {
+      "id": "video",
+      "nom": "Vidéo"
+    }
+  ],
+  "medias": [
+    {
+      "id": "mediapart",
+      "nom": "Mediapart",
+      "logo": "img/Logo mediapart.png",
+      "site": "https://www.mediapart.fr/",
+      "description": "Mediapart est un quotidien d'actualité numérique français créé en 2008 et présidé par Carine Fouteau. Il emploie près de 140 personnes dont plus de 70 journalistes, et compte 220 000 abonnés. Reconnu pour la qualité de son journalisme d'enquête et ayant une ligne éditoriale orientée à gauche, le site est disponible en français, anglais et espagnol.",
+      "themes": [
+        "politique"
+      ],
+      "supports": [],
+      "tags": [
+        "Politique",
+        "Société"
+      ],
+      "reseaux": {
+        "youtube": "https://www.youtube.com/@mediapart",
+        "x": "https://x.com/mediapart",
+        "instagram": "https://www.instagram.com/mediapart/"
+      },
+      "soutenir": "https://abo.mediapart.fr/",
+      "rss": "https://www.mediapart.fr/articles/feed"
+    },
+    {
+      "id": "streetpress",
+      "nom": "StreetPress",
+      "logo": "img/Logo-street-press.png",
+      "site": "https://www.streetpress.com/",
+      "description": "StreetPress est un site web français d'information, qui revendique un journalisme de gauche, engagé, consacré à l'investigation et aux cultures urbaines. Le site est officiellement lancé avec son agrément à la Commission paritaire des publications et des agences de presse en mars 20111. Le média indépendant est soutenu en juin 2022 par le Fonds pour une presse libre.",
+      "themes": [
+        "politique"
+      ],
+      "supports": [],
+      "tags": [
+        "Politique",
+        "Société"
+      ],
+      "reseaux": {
+        "youtube": "https://www.youtube.com/@streetpress",
+        "x": "https://x.com/streetpress",
+        "instagram": "https://www.instagram.com/streetpress/"
+      },
+      "soutenir": "https://www.streetpress.com/soutenir",
+      "rss": "https://www.streetpress.com/rss.xml"
+    },
+    {
+      "id": "blast",
+      "nom": "Blast",
+      "logo": "img/Logo.png",
+      "site": "https://www.blast-info.fr/",
+      "description": "Blast est un site d'information, ainsi qu'une web TV lancée par le journaliste d'investigation Denis Robert sous la forme d'une société coopérative d'intérêt collectif et financée par le biais du financement participatif. Blast traite les thématiques de la politique, de l'écologie, l'investigation, de la géopolitique, de l'économie, de la santé, de la justice, des luttes sociales, de la culture, à travers des reportages, des lives, des chroniques, des émissions de débats, des entretiens, des conférences, des articles de fond et des formations",
+      "themes": [
+        "politique"
+      ],
+      "supports": [],
+      "tags": [
+        "Politique",
+        "Société"
+      ],
+      "reseaux": {
+        "youtube": "https://www.youtube.com/@blastinfo",
+        "x": "https://x.com/blast_france",
+        "instagram": "https://www.instagram.com/blastofficiel/"
+      },
+      "soutenir": "https://www.blast-info.fr/soutenir",
+      "rss": "https://www.blast-info.fr/rss.xml"
+    },
+    {
+      "id": "politis",
+      "nom": "Politis",
+      "logo": "img/channels4_profile (1).png",
+      "site": "https://www.politis.fr/",
+      "description": "Politis est un hebdomadaire français d'actualités. Fondé en 1988 par Bernard Langlois et d'autres journalistes parmi lesquels Jean-Paul Besset, Michel Naudy, Rémy Galland, ce journal traite de l'actualité politique et sociale et se réclame de la gauche antilibérale et écologiste1. Il est membre fondateur de l'association Attac-France.",
+      "themes": [
+        "politique"
+      ],
+      "supports": [],
+      "tags": [
+        "Politique",
+        "Société"
+      ],
+      "reseaux": {
+        "youtube": "https://www.youtube.com/user/Politisvideos",
+        "x": "https://x.com/Politis_fr",
+        "instagram": "https://www.instagram.com/politis_fr/"
+      },
+      "soutenir": "https://www.politis.fr/boutique/",
+      "rss": "https://www.politis.fr/flux-rss-apps/"
+    },
+    {
+      "id": "spark",
+      "nom": "Spark",
+      "logo": "img/spark.png",
+      "site": "https://sparkstoriesfr.substack.com/",
+      "description": "L’ex-rédaction de @tracks_ARTE devient Spark, l’étincelle, première agence de voyages des mondes à venir. Sans Diffuseur Fixe !",
+      "themes": [
+        "culture"
+      ],
+      "supports": [],
+      "tags": [
+        "Culture",
+        "Société"
+      ],
+      "reseaux": {
+        "x": "https://x.com/spark_stories",
+        "instagram": "https://www.instagram.com/SparkStories.fr/",
+        "youtube": "https://www.youtube.com/@Spark-Stories-FR"
+      },
+      "soutenir": "https://fr.tipeee.com/sparkstories",
+      "rss": "https://sparkstoriesfr.substack.com/feed"
+    },
+    {
+      "id": "basta",
+      "nom": "Basta !",
+      "logo": "img/basta.png",
+      "site": "https://basta.media/",
+      "description": "Basta !, anciennement Bastamag, est un média pure player indépendant, lancé en France en 2008, traitant de l’actualité économique, sociale et environnementale. Le site Basta ! est édité en décembre 2008 par l’association Alter-médias, également éditrice du Portail des médias libres et est cofondé par Eros Sana, ancien porte-parole de José Bové.",
+      "themes": [
+        "ecologie"
+      ],
+      "supports": [
+        "presse"
+      ],
+      "tags": [
+        "Ecologie",
+        "Société"
+      ],
+      "reseaux": {
+        "youtube": "https://www.youtube.com/channel/UCl2DC-Gr2Ym2qfsyvesTBdA",
+        "x": "https://x.com/bastamedia_",
+        "instagram": "https://www.instagram.com/basta.media/"
+      },
+      "soutenir": "https://basta.media/don",
+      "rss": "https://basta.media/spip.php?page=backend"
+    },
+    {
+      "id": "reporterre",
+      "nom": "Reporterre",
+      "logo": "img/reporterre.png",
+      "site": "https://reporterre.net/",
+      "description": "Reporterre est un site d'actualité lancé en 2007 par le journaliste Hervé Kempf. Sous-titré « le média de l'écologie », il est le plus ancien quotidien d’information français sur l’écologie. Ce média sur internet est en accès libre et sans publicité. Son modèle économique repose essentiellement sur les dons de ses lecteurs. Les ressources de Reporterre dépendent à 98 % des dons de ses lecteurs et pour les 2 % restants de ventes éditoriales (droits notamment).",
+      "themes": [
+        "culture",
+        "ecologie"
+      ],
+      "supports": [
+        "presse"
+      ],
+      "tags": [
+        "Ecologie",
+        "Société"
+      ],
+      "reseaux": {
+        "youtube": "https://www.youtube.com/channel/UCDn6zvBZNEWUv44xjgELicA",
+        "x": "https://x.com/reporterre",
+        "instagram": "https://www.instagram.com/reporterre_media/"
+      },
+      "soutenir": "https://reporterre.net/dons",
+      "rss": "https://reporterre.net/spip.php?page=backend"
+    }
+  ]
+}

@@ -228,3 +228,16 @@ button a:hover {
     padding: 5% 0 10%;
     margin: 0;
 }
+
+/* Bloc média : prend toute la largeur même avec une description courte */
+.prez {
+    width: 100%;
+}
+
+.prez__right {
+    flex: 1;
+}
+
+.button-more button {
+    white-space: nowrap;
+}

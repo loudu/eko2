@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="robots" content="noindex, nofollow" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Lilita+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="admin.css" />
+   <link rel="icon" type="image/x-icon" href="img/E.png">
+   <title>EKO – Back office</title>
+</head>
+
+<body>
+   <header class="entete">
+      <a href="index.html" class="logo">EKO</a>
+      <span class="entete__titre">Back office</span>
+      <button type="button" class="bouton bouton--discret" id="deconnexion" hidden>Se déconnecter</button>
+   </header>
+
+   <main class="contenu">
+      <!-- Connexion à GitHub -->
+      <section id="ecran-connexion" class="carte connexion">
+         <h1>Connexion</h1>
+         <p class="aide">
+            Les médias du site sont enregistrés dans le fichier <code>medias.json</code> du dépôt GitHub.
+            Pour les modifier, connectez-vous avec une clé d'accès GitHub (jeton personnel).
+         </p>
+         <form id="form-connexion" class="grille">
+            <label>Dépôt (propriétaire/nom)
+               <input name="depot" required placeholder="loudu/eko2" pattern="[\w.-]+/[\w.-]+" autocomplete="off">
+            </label>
+            <label>Branche publiée
+               <input name="branche" required placeholder="main" autocomplete="off">
+            </label>
+            <label class="pleine">Clé d'accès GitHub
+               <input name="jeton" type="password" required placeholder="github_pat_…" autocomplete="off">
+            </label>
+            <label class="case pleine">
+               <input type="checkbox" name="souvenir"> Rester connecté sur cet appareil
+            </label>
+            <div class="pleine actions">
+               <button type="submit" class="bouton">Se connecter</button>
+            </div>
+         </form>
+         <details class="aide">
+            <summary>Comment obtenir une clé d'accès ?</summary>
+            <ol>
+               <li>Sur GitHub : <strong>Settings → Developer settings → Personal access tokens → Fine-grained tokens</strong>, puis <strong>Generate new token</strong>.</li>
+               <li>Dans <strong>Repository access</strong>, choisissez <strong>Only select repositories</strong> et sélectionnez le dépôt du site.</li>
+               <li>Dans <strong>Permissions → Repository permissions</strong>, mettez <strong>Contents</strong> sur <strong>Read and write</strong>.</li>
+               <li>Copiez la clé générée et collez-la ci-dessus. Ne la partagez avec personne.</li>
+            </ol>
+         </details>
+      </section>
+
+      <!-- Liste des médias -->
+      <section id="ecran-liste" hidden>
+         <div class="barre">
+            <h1>Médias <span class="compteur" id="compteur"></span></h1>
+            <div class="barre__actions">
+               <input type="search" id="recherche" placeholder="Rechercher un média ou un tag" aria-label="Rechercher">
+               <button type="button" class="bouton" id="ajouter">+ Ajouter un média</button>
+            </div>
+         </div>
+         <ul class="liste" id="liste"></ul>
+      </section>
+   </main>
+
+   <!-- Formulaire d'ajout / modification -->
+   <dialog id="dialogue-media" class="dialogue">
+      <form id="form-media" method="dialog" novalidate>
+         <h2 id="titre-form">Ajouter un média</h2>
+
+         <div class="grille">
+            <label>Nom du média *
+               <input name="nom" required maxlength="80">
+            </label>
+            <label>Site web
+               <input name="site" type="url" placeholder="https://…">
+            </label>
+
+            <div class="pleine logo-champ">
+               <img id="apercu-logo" alt="" hidden>
+               <label>Logo (PNG, JPG, WebP ou SVG, 1 Mo max)
+                  <input name="logo" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml">
+               </label>
+            </div>
+
+            <label class="pleine">Description
+               <textarea name="description" rows="4" maxlength="1200"></textarea>
+            </label>
+
+            <fieldset class="pleine">
+               <legend>Thèmes (pages où le média apparaît)</legend>
+               <div class="choix" id="choix-themes"></div>
+            </fieldset>
+
+            <fieldset class="pleine">
+               <legend>Supports</legend>
+               <div class="choix" id="choix-supports"></div>
+            </fieldset>
+
+            <div class="pleine">
+               <label for="tag-saisie">Tags (affichés sous la description)</label>
+               <div class="tags-champ" id="tags-champ">
+                  <ul class="tags-liste" id="tags-liste"></ul>
+                  <input id="tag-saisie" list="tags-connus" placeholder="Écrire un tag puis Entrée" maxlength="30">
+               </div>
+               <datalist id="tags-connus"></datalist>
+            </div>
+
+            <label>YouTube
+               <input name="youtube" type="url" placeholder="https://www.youtube.com/@…">
+            </label>
+            <label>X (Twitter)
+               <input name="x" type="url" placeholder="https://x.com/…">
+            </label>
+            <label>Instagram
+               <input name="instagram" type="url" placeholder="https://www.instagram.com/…">
+            </label>
+            <label>Lien « Soutenir » (dons, abonnement)
+               <input name="soutenir" type="url" placeholder="https://…">
+            </label>
+            <label class="pleine">Flux RSS (pour la section « À la une »)
+               <input name="rss" type="url" placeholder="https://…/rss.xml">
+            </label>
+         </div>
+
+         <p class="erreur" id="erreur-form" role="alert"></p>
+
+         <div class="actions">
+            <button type="button" class="bouton bouton--discret" id="annuler">Annuler</button>
+            <button type="submit" class="bouton" id="enregistrer">Enregistrer</button>
+         </div>
+      </form>
+   </dialog>
+
+   <!-- Confirmation de suppression -->
+   <dialog id="dialogue-suppression" class="dialogue dialogue--petit">
+      <form method="dialog">
+         <h2>Supprimer ce média ?</h2>
+         <p id="texte-suppression"></p>
+         <div class="actions">
+            <button value="non" class="bouton bouton--discret">Annuler</button>
+            <button value="oui" class="bouton bouton--danger">Supprimer</button>
+         </div>
+      </form>
+   </dialog>
+
+   <div class="message" id="message" role="status" aria-live="polite"></div>
+
+   <script src="admin.js"></script>
+</body>
+
+</html>

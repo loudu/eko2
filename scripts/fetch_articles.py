@@ -17,20 +17,19 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
-# À vérifier / compléter : adresse du flux RSS de chaque média.
-FEEDS = [
-    {"media": "Mediapart", "url": "https://www.mediapart.fr/articles/feed", "logo": "img/Logo mediapart.png"},
-    {"media": "StreetPress", "url": "https://www.streetpress.com/rss.xml", "logo": "img/Logo-street-press.png"},
-    {"media": "Blast", "url": "https://www.blast-info.fr/rss.xml", "logo": "img/Logo.png"},
-    {"media": "Politis", "url": "https://www.politis.fr/flux-rss-apps/", "logo": "img/channels4_profile (1).png"},
-    {"media": "Basta !", "url": "https://basta.media/spip.php?page=backend", "logo": "img/basta.png"},
-    {"media": "Reporterre", "url": "https://reporterre.net/spip.php?page=backend", "logo": "img/reporterre.png"},
-    {"media": "Spark", "url": "https://sparkstoriesfr.substack.com/feed", "logo": "img/spark.png"},
-]
+RACINE = Path(__file__).resolve().parent.parent
+# Les flux viennent de medias.json (champ « rss »), modifiable depuis le back office admin.html.
+
+
+def lire_flux():
+    donnees = json.loads((RACINE / "medias.json").read_text(encoding="utf-8"))
+    return [{"media": m["nom"], "url": m["rss"], "logo": m.get("logo")}
+            for m in donnees.get("medias", []) if m.get("rss")]
+
 
 PAR_MEDIA = 3      # articles gardés par média
 TOTAL = 18         # articles gardés au total
-SORTIE = Path(__file__).resolve().parent.parent / "articles.json"
+SORTIE = RACINE / "articles.json"
 USER_AGENT = "EKO-agregateur/1.0 (lecteur de flux RSS)"
 
 NS = {
@@ -125,7 +124,7 @@ def telecharger(url):
 
 def main():
     tous, erreurs = [], 0
-    for flux in FEEDS:
+    for flux in lire_flux():
         try:
             arts = analyser(telecharger(flux["url"]), flux)
             print(f"OK   {flux['media']}: {len(arts)} article(s)")
