@@ -1,21 +1,93 @@
 {
-  "mis_a_jour": "2026-11-27T12:18:26+00:00",
+  "mis_a_jour": "2026-11-27T21:57:38+00:00",
   "articles": [
     {
-      "titre": "Allemagne : itinéraire d’un néonazi repenti",
-      "lien": "https://www.politis.fr/api/proxy/?articleID=528699",
-      "date": "2026-11-27T11:31:39+00:00",
-      "image": "https://www.politis.fr/wp-content/uploads/2026/11/neonazi-e1795439905721-383x257.jpg",
+      "titre": "Face à l’extrême droite, faire réseau pour continuer d’agir",
+      "lien": "https://www.politis.fr/api/proxy/?articleID=528892",
+      "date": "2026-11-27T20:20:24+00:00",
+      "image": "https://www.politis.fr/wp-content/uploads/2026/11/Alessandro-Pignocchi-383x257.jpeg",
       "media": "Politis",
       "logo": "img/channels4_profile (1).png"
     },
     {
-      "titre": "L’extrême droite espagnole espère s’imposer au gouvernement",
-      "lien": "https://www.mediapart.fr/journal/international/271126/l-extreme-droite-espagnole-espere-s-imposer-au-gouvernement",
-      "date": "2026-11-27T12:26:55+01:00",
-      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/27/261127-img-l-extreme-droite-espagnole-espere-s-imposer-au-gouvernement-2.jpg",
+      "titre": "À Lille, les fermetures de l’université à répétition crispent, isolent et inquiètent les étudiants",
+      "lien": "https://www.mediapart.fr/journal/france/271126/lille-les-fermetures-de-l-universite-repetition-crispent-isolent-et-inquietent-les-etudiants",
+      "date": "2026-11-27T19:16:44+01:00",
+      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/27/261127-img-lille-les-fermetures-repetition-de-l-universite-crispent-isolent-et-inquietent-les-etudiants-2.jpg",
       "media": "Mediapart",
       "logo": "img/Logo mediapart.png"
+    },
+    {
+      "titre": "Dans les universités, la mobilisation tient bon, loin des projecteurs",
+      "lien": "https://www.mediapart.fr/journal/france/271126/dans-les-universites-la-mobilisation-tient-bon-loin-des-projecteurs",
+      "date": "2026-11-27T19:15:43+01:00",
+      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/27/261127-img-dans-les-universites.jpg",
+      "media": "Mediapart",
+      "logo": "img/Logo mediapart.png"
+    },
+    {
+      "titre": "Contre les blocages, le ministère veut confier l’exclusion des lycéens aux directeurs académiques",
+      "lien": "https://www.mediapart.fr/journal/france/271126/contre-les-blocages-le-ministere-veut-confier-l-exclusion-des-lyceens-aux-directeurs-academiques",
+      "date": "2026-11-27T19:10:50+01:00",
+      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/27/261127-img-confier-le-pouvoir-d-exclusion.jpg",
+      "media": "Mediapart",
+      "logo": "img/Logo mediapart.png"
+    },
+    {
+      "titre": "Manifestation du 28 novembre : derrière le vernis féministe de Némesis, le racisme décomplexé",
+      "lien": "https://www.politis.fr/api/proxy/?articleID=531348",
+      "date": "2026-11-27T17:06:34+00:00",
+      "image": "https://www.politis.fr/wp-content/uploads/2026/02/000_94ND9ZR1-383x257.jpg",
+      "media": "Politis",
+      "logo": "img/channels4_profile (1).png"
+    },
+    {
+      "titre": "De la moisissure pour dépolluer nos sols ? La piste prometteuse des champignons",
+      "lien": "https://reporterre.net/De-la-moisissure-pour-depolluer-nos-sols-La-piste-prometteuse-des-champignons",
+      "date": "2026-11-27T16:56:22+00:00",
+      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/micromycete_-_lubem_1_-b9e32.jpg?1795799009",
+      "media": "Reporterre",
+      "logo": "img/reporterre.png"
+    },
+    {
+      "titre": "Malgré l’ONU, la justice prolonge à huis clos la détention provisoire du Palestinien Ali",
+      "lien": "https://www.politis.fr/api/proxy/?articleID=531212",
+      "date": "2026-11-27T15:16:30+00:00",
+      "image": "https://www.politis.fr/wp-content/uploads/2026/05/SIRVINS_ALI_22-383x257.jpeg",
+      "media": "Politis",
+      "logo": "img/channels4_profile (1).png"
+    },
+    {
+      "titre": "« Ce qui l’attend, c’est un pétage de crâne ! » : à Nantes, un gendarme condamné pour avoir menacé un ado de 17 ans",
+      "lien": "https://www.streetpress.com/1795769760-petage-crane-nantes-gendarme-condamne-menace-mort-adolescent-17-ans-justice/",
+      "date": "2026-11-27T15:09:00+00:00",
+      "image": null,
+      "media": "StreetPress",
+      "logo": "img/Logo-street-press.png"
+    },
+    {
+      "titre": "« Inspection citoyenne » chez Syngenta : 4 pesticides interdits retrouvés",
+      "lien": "https://reporterre.net/Inspection-citoyenne-chez-Syngenta-4-pesticides-interdits-retrouves",
+      "date": "2026-11-27T15:02:43+00:00",
+      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/23112026_nmn_7265_action_faucheursogm__c_nnoman-2-4aba4.jpg?1795791826",
+      "media": "Reporterre",
+      "logo": "img/reporterre.png"
+    },
+    {
+      "titre": "Avant la grève du 1er décembre, le patronat refuse toujours d'augmenter les salaires",
+      "lien": "https://basta.media/Avant-greve-du-1er-decembre-patronat-refuse-toujours-augmenter-salaires",
+      "date": "2026-11-27T15:00:00+00:00",
+      "image": "https://basta.media/local/cache-vignettes/L150xH100/hl_pbatard_3399857-b4d16.jpg?1795791633",
+      "media": "Basta !",
+      "logo": "img/basta.png"
+    },
+    {
+      "titre": "Les paysans se battent pour l'argent de la PAC, mais celui-ci risque de servir l'agriculture intensive",
+      "lien": "https://reporterre.net/Les-paysans-se-battent-pour-l-argent-de-la-PAC-mais-celui-ci-risque-de-servir-l",
+      "date": "2026-11-27T14:00:00+00:00",
+      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/farmxbrux-d63d1.jpg?1795788001",
+      "media": "Reporterre",
+      "logo": "img/reporterre.png"
     },
     {
       "titre": "Reporters sans frontières demande la suspension de CNews pour un mois",
@@ -26,68 +98,12 @@
       "logo": "img/basta.png"
     },
     {
-      "titre": "Pomme: «Contre le RN, je n’ai pas d’autre choix que de m’engager»",
-      "lien": "https://www.mediapart.fr/journal/culture-et-idees/271126/pomme-contre-le-rn-je-n-ai-pas-d-autre-choix-que-de-m-engager",
-      "date": "2026-11-27T11:56:29+01:00",
-      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/27/261127-re-sonances-pomme.png",
-      "media": "Mediapart",
-      "logo": "img/Logo mediapart.png"
-    },
-    {
-      "titre": "Violences de genre: les associations spécialisées au bord de l’implosion",
-      "lien": "https://www.mediapart.fr/journal/france/271126/violences-de-genre-les-associations-specialisees-au-bord-de-l-implosion",
-      "date": "2026-11-27T11:50:18+01:00",
-      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/25/261125-img-violences-envers-les-femmes-les-associations-au-bord-de-l-implosion.jpg",
-      "media": "Mediapart",
-      "logo": "img/Logo mediapart.png"
-    },
-    {
       "titre": "Exposée aux pesticides toute sa vie, elle est atteinte de Parkinson | LA VRAIE VIE",
       "lien": "https://www.streetpress.com/1795715779-exposee-pesticides-agricultrice-gisele-garreau-atteinte-maladie-parkinson-vraie-vie/",
       "date": "2026-11-27T10:50:00+00:00",
       "image": null,
       "media": "StreetPress",
       "logo": "img/Logo-street-press.png"
-    },
-    {
-      "titre": "Le génocide continue à Gaza, le programme Pause reste « en pause »",
-      "lien": "https://www.politis.fr/api/proxy/?articleID=530499",
-      "date": "2026-11-27T10:39:21+00:00",
-      "image": "https://www.politis.fr/wp-content/uploads/2025/10/SIRVINS_GAZA1_7-383x257.jpg",
-      "media": "Politis",
-      "logo": "img/channels4_profile (1).png"
-    },
-    {
-      "titre": "« Je veux continuer à donner envie d’apprendre aux élèves »",
-      "lien": "https://www.politis.fr/api/proxy/?articleID=528800",
-      "date": "2026-11-27T10:00:00+00:00",
-      "image": "https://www.politis.fr/wp-content/uploads/2026/11/SIRVINS_0511_35-383x257.jpg",
-      "media": "Politis",
-      "logo": "img/channels4_profile (1).png"
-    },
-    {
-      "titre": "« Pour nettoyer les corps, je n'ai rien à part du sopalin et du détachant multiusages » : l'indigne business de la mort des animaux de compagnie",
-      "lien": "https://reporterre.net/Cadavres-qui-debordent-cendres-douteuses-les-coulisses-du-specialiste-de-la-cremation-d",
-      "date": "2026-11-27T08:16:32+00:00",
-      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/oh_mu-2026_11_cre_mation-97205.jpg?1795767409",
-      "media": "Reporterre",
-      "logo": "img/reporterre.png"
-    },
-    {
-      "titre": "Des pesticides interdits pourraient bientôt faire leur retour sous pression de l'agro-industrie",
-      "lien": "https://reporterre.net/La-guerre-des-betteraves-le-gouvernement-parviendra-t-il-a-reintroduire-un-pesticide",
-      "date": "2026-11-27T06:30:00+00:00",
-      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/afp__20261030__d4we7gh__v1__highres__franceagricultureindustry-4d7cb.jpg?1795761001",
-      "media": "Reporterre",
-      "logo": "img/reporterre.png"
-    },
-    {
-      "titre": "« Nous ne perdons pas le contrôle de l'IA, mais celui des entreprises qui la déploient »",
-      "lien": "https://reporterre.net/IApocalypse-un-fantasme-qui-masque-les-dangers-reels-derriere-l-intelligence-artificielle",
-      "date": "2026-11-27T05:30:00+00:00",
-      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/brasmontresgeant-3dca9.jpg?1795757401",
-      "media": "Reporterre",
-      "logo": "img/reporterre.png"
     },
     {
       "titre": "« Donne-moi tes enfants » : une élue de Bobigny se filme en train d'expulser des familles rroms",
@@ -102,22 +118,6 @@
       "lien": "https://basta.media/Lycee-Stains-elles-denoncent-violences-rectorat-les-mute-VSS",
       "date": "2026-11-26T16:00:00+00:00",
       "image": "https://basta.media/local/cache-vignettes/L150xH100/deux_femmes-70ca0.jpg?1795708856",
-      "media": "Basta !",
-      "logo": "img/basta.png"
-    },
-    {
-      "titre": "Trois militants d'extrême droite jugés pour l'attaque d'un bar à Alès",
-      "lien": "https://www.streetpress.com/1795691016-trois-militants-extreme-droite-juges-tribunal-attaque-bar-communiste-ales-bloc-montpellierain/",
-      "date": "2026-11-26T15:05:00+00:00",
-      "image": null,
-      "media": "StreetPress",
-      "logo": "img/Logo-street-press.png"
-    },
-    {
-      "titre": "Des bergers sans terre et des écologues relancent le pastoralisme sur les bords de Loire",
-      "lien": "https://basta.media/bergers-sans-terre-conservatoire-espaces-naturels-relancent-pastoralisme-bords-de-Loire-PastoLoire",
-      "date": "2026-11-26T06:00:00+00:00",
-      "image": "https://basta.media/local/cache-vignettes/L150xH100/vii.pasto-loire5-credit_corentin_malinge-71e2d.jpg?1795672842",
       "media": "Basta !",
       "logo": "img/basta.png"
     }
