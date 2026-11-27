@@ -5,9 +5,10 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="style-theme.css" />
+   <link rel="stylesheet" href="menu.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Lilita+One&display=swap" rel="stylesheet">
    <link rel="icon" type="image/x-icon" href="img/E.png">
    <title>EKO</title>
 </head>
@@ -18,109 +19,44 @@
          <a href="index.html">
             <h1>EKO</h1>
          </a>
+         <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </button>
+         <ul class="nav-menu" id="nav-menu">
+            <li><a class="nav-link" href="a-propos.html">À propos</a></li>
+            <li><a class="nav-link" href="theme.html" data-section="theme">Thèmes</a></li>
+            <li><a class="nav-link" href="support-presse.html" data-section="support">Support</a></li>
+         </ul>
       </nav>
       <p>Trouve ton média <br> par thème</p>
    </header>
    <main>
       <div class="theme">
          <div class="theme__border">
-            <a href="theme.html"><img class="img1" src="img/Politique.png"></a>
+            <a href="theme.html" title="Politique"><img src="img/Politique.png" alt="Politique"></a>
          </div>
          <div class="theme__border">
-            <a href="theme-culture.html"><img class="img2" src="img/Culture.png"></a>
+            <a href="theme-culture.html" title="Culture"><img src="img/Culture.png" alt="Culture"></a>
          </div>
          <div class="theme__border">
-            <img class="img3" src="img/Histoire.png">
+            <a href="theme-histoire.html" title="Histoire"><img src="img/Histoire.png" alt="Histoire"></a>
          </div>
          <div class="theme__border">
-            <img class="img4" src="img/Conflit.png">
+            <a href="theme-conflit.html" title="Conflit"><img src="img/Conflit.png" alt="Conflit"></a>
          </div>
          <div class="theme__border">
-            <img class="img5" src="img/Monde.png">
+            <a href="theme-monde.html" title="Monde"><img src="img/Monde.png" alt="Monde"></a>
          </div>
          <div class="theme__border theme__border--active">
-           <img class="img5" src="img/Ecologie.png"></a>
+            <a href="theme-eco.html" title="Écologie" aria-current="page"><img src="img/Ecologie.png" alt="Écologie"></a>
          </div>
       </div>
-      <div>
-         <div class="media">
-            <div class="prez">
-               <div class="prez__left">
-                  <a href="https://basta.media/" target="_blank"><img src="img/basta.png"></a>
-               </div>
-               <div class="prez__right">
-                  <p class="descripiton">
-                    
-                   Basta !, anciennement Bastamag, est un média pure player indépendant, lancé en France en 2008, traitant de l’actualité économique, sociale et environnementale.
-                   Le site Basta ! est édité en décembre 2008 par l’association Alter-médias, également éditrice du Portail des médias libres et est cofondé par Eros Sana, ancien porte-parole de José Bové.
-
-
-                  </p>
-                  <div class="button-more">
-                     <button><a href="https://basta.media/" target="_blank">+ d'infos</a></button>
-                   <div class="tags">
-                     <span>TAGS : </span>
-                     <button>Ecologie</button>
-                     <button>Société</button>
-                  </div>
-                  </div>
-               <div class="rs">
-                  <div class="column">
-                     <span>Réseaux sociaux : </span>
-                     <div>
-                        <a href="https://www.youtube.com/channel/UCl2DC-Gr2Ym2qfsyvesTBdA" target="_blank"><img src="img/Youtube.png"></a>
-                        <a href="https://x.com/bastamedia_" target="_blank"><img src="img/Twitter.png"></a>  
-                        <a href="https://www.instagram.com/basta.media/" target="_blank"><img src="img/Instagram.png"></a>
-                     </div>
-                  </div>
-                  <div class="column align-center">
-                     <span>Soutenir :</span>
-                    <a href="https://basta.media/don" target="_blank"><img src="img/Soutenir.png"></a> 
-                  </div>
-               </div>
-            </div>
-
-         </div>
-      </div>
-      <div class="media">
-         <div class="prez">
-            <div class="prez__left">
-              <a href="https://reporterre.net/" target="_blank"><img src="img/reporterre.png"></a> 
-            </div>
-            <div class="prez__right">
-               <p class="descripiton">
-                  Reporterre est un site d'actualité lancé en 2007 par le journaliste Hervé Kempf. Sous-titré « le média de l'écologie », il est le plus ancien quotidien d’information français sur l’écologie.
-                  Ce média sur internet est en accès libre et sans publicité. Son modèle économique repose essentiellement sur les dons de ses lecteurs. 
-                  Les ressources de Reporterre dépendent à 98 % des dons de ses lecteurs et pour les 2 % restants de ventes éditoriales (droits notamment).
-               </p>
-               <div class="button-more">
-                  <button><a href="https://reporterre.net/" target="_blank">+ d'infos</a></button>
-                  <div class="tags">
-                  <span>TAGS : </span>
-                  <button>Ecologie</button>
-                  <button>Société</button>
-               </div>
-               </div>
-               <div class="rs">
-                  <div class="column">
-                     <span>Réseaux sociaux : </span>
-                     <div>
-                        <a href="https://www.youtube.com/channel/UCDn6zvBZNEWUv44xjgELicA" target="_blank"><img src="img/Youtube.png"></a>
-                        <a href="https://x.com/reporterre" target="_blank"><img src="img/Twitter.png"></a>  
-                        <a href="https://www.instagram.com/reporterre_media/" target="_blank"><img src="img/Instagram.png"></a>
-                     </div>
-                  </div>
-                  <div class="column align-center">
-                     <span>Soutenir :</span>
-                     <a href="https://reporterre.net/dons" target="_blank"><img src="img/Soutenir.png"></a>
-                  </div>
-               </div>
-            </div>
-
-         </div>
-      </div>
-      </div>
+      <div id="medias" data-theme="ecologie"></div>
    </main>
    <footer>
    </footer>
+   <script src="menu.js"></script>
+   <script src="medias.js"></script>
 </body>

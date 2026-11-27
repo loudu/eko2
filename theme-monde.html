@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style-theme.css" />
+   <link rel="stylesheet" href="menu.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Lilita+One&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/x-icon" href="img/E.png">
+   <title>EKO</title>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <a href="index.html">
+            <h1>EKO</h1>
+         </a>
+         <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </button>
+         <ul class="nav-menu" id="nav-menu">
+            <li><a class="nav-link" href="a-propos.html">À propos</a></li>
+            <li><a class="nav-link" href="theme.html" data-section="theme">Thèmes</a></li>
+            <li><a class="nav-link" href="support-presse.html" data-section="support">Support</a></li>
+         </ul>
+      </nav>
+      <p>Trouve ton média <br> par thème</p>
+   </header>
+   <main>
+      <div class="theme">
+         <div class="theme__border">
+            <a href="theme.html" title="Politique"><img src="img/Politique.png" alt="Politique"></a>
+         </div>
+         <div class="theme__border">
+            <a href="theme-culture.html" title="Culture"><img src="img/Culture.png" alt="Culture"></a>
+         </div>
+         <div class="theme__border">
+            <a href="theme-histoire.html" title="Histoire"><img src="img/Histoire.png" alt="Histoire"></a>
+         </div>
+         <div class="theme__border">
+            <a href="theme-conflit.html" title="Conflit"><img src="img/Conflit.png" alt="Conflit"></a>
+         </div>
+         <div class="theme__border theme__border--active">
+            <a href="theme-monde.html" title="Monde" aria-current="page"><img src="img/Monde.png" alt="Monde"></a>
+         </div>
+         <div class="theme__border">
+            <a href="theme-eco.html" title="Écologie"><img src="img/Ecologie.png" alt="Écologie"></a>
+         </div>
+      </div>
+      <div id="medias" data-theme="monde"></div>
+   </main>
+   <footer>
+   </footer>
+   <script src="menu.js"></script>
+   <script src="medias.js"></script>
+</body>

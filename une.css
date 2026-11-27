@@ -1,0 +1,156 @@
+/* Section « À la une » : derniers articles des médias */
+
+.une {
+    --visibles: 3;                    /* toujours 3 articles affichés */
+    --fleche: 52px;                   /* diamètre des flèches */
+    --espace-fleche: 24px;            /* espace entre flèche et cartes */
+    --ecart: min(110px, 5cqw);        /* espace entre les cartes */
+    /* Les cartes rétrécissent pour que 3 cartes tiennent toujours (286px max) */
+    --carte: min(286px, calc((100cqw - 2 * var(--fleche) - 2 * var(--espace-fleche) - 2 * var(--ecart)) / 3));
+    --texte: clamp(11px, calc(var(--carte) * .063), 18px);
+    container-type: inline-size;
+    padding: 0 16px 6%;
+}
+
+.une__carrousel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--espace-fleche);
+    margin-top: 40px;
+}
+
+.une__fenetre {
+    width: calc(var(--visibles) * var(--carte) + (var(--visibles) - 1) * var(--ecart));
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.une__piste {
+    display: flex;
+    gap: var(--ecart);
+    transition: transform .45s ease;
+    touch-action: pan-y;
+}
+
+.une__carte,
+.une__carte:hover {
+    display: flex;
+    flex: 0 0 var(--carte);
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: var(--carte);
+    color: white;
+    font-size: inherit;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+}
+
+.une__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 286 / 224;
+    margin-bottom: 12px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, .85);
+    border-radius: min(18px, calc(var(--carte) * .063));
+    background-color: #111;
+}
+
+/* Quand l'article n'a pas d'image : logo du média */
+.une__image--logo {
+    object-fit: contain;
+    padding: calc(var(--carte) * .11);
+    background-color: white;
+}
+
+.une__titre {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: var(--texte);
+    line-height: 1.3;
+    text-align: center;
+}
+
+.une__media {
+    font-size: var(--texte);
+    color: rgba(255, 255, 255, .85);
+}
+
+.une__carte[href]:hover .une__titre,
+.une__carte:focus-visible .une__titre {
+    text-decoration: underline;
+}
+
+.une__carte:focus-visible {
+    outline: none;
+}
+
+.une__carte:focus-visible .une__image {
+    outline: 2px solid white;
+    outline-offset: -3px;
+}
+
+/* Flèches de part et d'autre de la section */
+.une__fleche {
+    display: flex;
+    flex: 0 0 var(--fleche);
+    align-items: center;
+    justify-content: center;
+    width: var(--fleche);
+    height: var(--fleche);
+    /* centrées sur la hauteur des images */
+    margin-top: calc(var(--carte) * 224 / 286 / 2 - var(--fleche) / 2);
+    padding: 0;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.une__fleche svg {
+    width: 50%;
+    height: 50%;
+}
+
+.une__fleche:hover {
+    background-color: #222;
+}
+
+.une__fleche:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.une__fleche[hidden] {
+    display: none;
+}
+
+.une__source {
+    display: block;
+    margin-top: 40px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #999;
+}
+
+/* Petits écrans : flèches plus petites pour laisser de la place aux 3 cartes */
+@media (max-width: 820px) {
+    .une {
+        --fleche: 36px;
+        --espace-fleche: 8px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .une__piste {
+        transition: none;
+    }
+}

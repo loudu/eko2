@@ -1,0 +1,491 @@
+/* Back office EKO */
+
+:root {
+    --fond: #000;
+    --surface: #141414;
+    --surface-2: #1f1f1f;
+    --bordure: #333;
+    --texte: #fff;
+    --texte-2: #b5b5b5;
+    --danger: #ff6b6b;
+    --ok: #7ddc8f;
+    color-scheme: dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fond);
+    color: var(--texte);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+.logo,
+.entete__titre {
+    font-family: 'gagalin', 'Lilita One', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0 0 12px;
+}
+
+h2 {
+    font-size: 26px;
+    margin: 0 0 16px;
+}
+
+code {
+    background-color: var(--surface-2);
+    padding: 1px 6px;
+    border-radius: 6px;
+}
+
+/* En-tête */
+.entete {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px max(16px, 3%);
+    border-bottom: 1px solid var(--bordure);
+}
+
+.logo {
+    font-size: 36px;
+    color: var(--texte);
+    text-decoration: none;
+}
+
+.entete__titre {
+    font-size: 22px;
+    color: var(--texte-2);
+}
+
+.entete .bouton {
+    margin-left: auto;
+}
+
+.contenu {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 16px 80px;
+}
+
+/* Boutons */
+.bouton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: 8px 18px;
+    border: 1px solid var(--texte);
+    border-radius: 20px;
+    background-color: var(--texte);
+    color: #000;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bouton:hover {
+    background-color: #ddd;
+}
+
+.bouton:disabled {
+    opacity: .5;
+    cursor: wait;
+}
+
+.bouton--discret {
+    background-color: transparent;
+    color: var(--texte);
+    border-color: var(--bordure);
+}
+
+.bouton--discret:hover {
+    background-color: var(--surface-2);
+}
+
+.bouton--danger {
+    background-color: var(--danger);
+    border-color: var(--danger);
+}
+
+.bouton--danger:hover {
+    background-color: #ff8d8d;
+}
+
+.bouton--petit {
+    min-height: 32px;
+    padding: 4px 14px;
+    font-size: 14px;
+}
+
+.bouton:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 2px solid var(--texte);
+    outline-offset: 2px;
+}
+
+/* Cartes et formulaires */
+.carte {
+    background-color: var(--surface);
+    border: 1px solid var(--bordure);
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.connexion {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.aide {
+    color: var(--texte-2);
+}
+
+.aide summary {
+    cursor: pointer;
+    color: var(--texte);
+    margin-top: 16px;
+}
+
+.aide ol {
+    padding-left: 20px;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.pleine {
+    grid-column: 1 / -1;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--texte-2);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--bordure);
+    border-radius: 10px;
+    background-color: var(--fond);
+    color: var(--texte);
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: var(--texte);
+}
+
+label.case {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: var(--texte);
+    font-size: 15px;
+}
+
+input[aria-invalid="true"] {
+    border-color: var(--danger);
+}
+
+fieldset {
+    margin: 0;
+    padding: 12px 16px 16px;
+    border: 1px solid var(--bordure);
+    border-radius: 10px;
+}
+
+legend {
+    padding: 0 6px;
+    font-size: 14px;
+    color: var(--texte-2);
+}
+
+.choix {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.erreur {
+    min-height: 1.5em;
+    margin: 12px 0 0;
+    color: var(--danger);
+}
+
+/* Logo */
+.logo-champ {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-champ label {
+    flex: 1;
+}
+
+#apercu-logo,
+.media-ligne__logo {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/* Saisie des tags */
+.tags-champ {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    padding: 6px;
+    border: 1px solid var(--bordure);
+    border-radius: 10px;
+    background-color: var(--fond);
+}
+
+.tags-champ:focus-within {
+    outline: 2px solid var(--texte);
+    outline-offset: 2px;
+}
+
+.tags-champ input {
+    flex: 1;
+    min-width: 160px;
+    border: none;
+    padding: 4px 6px;
+    outline: none;
+}
+
+.tags-liste {
+    display: contents;
+    list-style: none;
+}
+
+.pastille {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 4px 2px 12px;
+    border-radius: 15px;
+    background-color: var(--texte);
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pastille--discrete {
+    padding: 2px 10px;
+    background-color: var(--surface-2);
+    color: var(--texte-2);
+    font-weight: normal;
+}
+
+.pastille button {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #000;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.pastille button:hover {
+    background-color: rgba(0, 0, 0, .12);
+}
+
+/* Liste des médias */
+.barre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.barre h1 {
+    margin: 0;
+}
+
+.compteur {
+    font-size: 20px;
+    color: var(--texte-2);
+}
+
+.barre__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.barre__actions input {
+    width: 260px;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.media-ligne {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--surface);
+    border: 1px solid var(--bordure);
+    border-radius: 14px;
+}
+
+.media-ligne__infos {
+    flex: 1;
+    min-width: 0;
+}
+
+.media-ligne__nom {
+    margin: 0 0 6px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.media-ligne__pastilles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.media-ligne__alerte {
+    margin: 6px 0 0;
+    font-size: 14px;
+    color: #ffc66b;
+}
+
+.media-ligne__actions {
+    display: flex;
+    gap: 8px;
+}
+
+.vide {
+    padding: 40px;
+    text-align: center;
+    color: var(--texte-2);
+}
+
+/* Fenêtres */
+.dialogue {
+    width: min(760px, calc(100vw - 32px));
+    max-height: calc(100vh - 32px);
+    padding: 28px;
+    border: 1px solid var(--bordure);
+    border-radius: 16px;
+    background-color: var(--surface);
+    color: var(--texte);
+}
+
+.dialogue--petit {
+    width: min(440px, calc(100vw - 32px));
+}
+
+.dialogue::backdrop {
+    background-color: rgba(0, 0, 0, .75);
+}
+
+/* Message de confirmation */
+.message {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    max-width: calc(100vw - 32px);
+    padding: 12px 20px;
+    border-radius: 12px;
+    background-color: var(--texte);
+    color: #000;
+    font-weight: 600;
+    transform: translate(-50%, 150%);
+    transition: transform .25s ease;
+}
+
+.message.visible {
+    transform: translate(-50%, 0);
+}
+
+.message.erreur-msg {
+    background-color: var(--danger);
+}
+
+@media (max-width: 640px) {
+    .grille {
+        grid-template-columns: 1fr;
+    }
+
+    .media-ligne {
+        flex-wrap: wrap;
+    }
+
+    .media-ligne__actions {
+        width: 100%;
+    }
+
+    .barre__actions,
+    .barre__actions input {
+        width: 100%;
+    }
+
+    .dialogue {
+        padding: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .message {
+        transition: none;
+    }
+}
