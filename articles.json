@@ -1,6 +1,54 @@
 {
-  "mis_a_jour": "2026-11-27T21:57:38+00:00",
+  "mis_a_jour": "2026-11-28T12:58:31+00:00",
   "articles": [
+    {
+      "titre": "Réserves de biodiversité, les prairies disparaissent en silence",
+      "lien": "https://www.mediapart.fr/journal/ecologie/281126/reserves-de-biodiversite-les-prairies-disparaissent-en-silence",
+      "date": "2026-11-28T13:18:12+01:00",
+      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/27/261128-img-eclats-de-sciences.jpg",
+      "media": "Mediapart",
+      "logo": "img/Logo mediapart.png"
+    },
+    {
+      "titre": "Ciblage des associations et attaque des journalistes: Marine Le Pen tombe le masque",
+      "lien": "https://www.mediapart.fr/journal/politique/281126/ciblage-des-associations-et-attaque-des-journalistes-marine-le-pen-tombe-le-masque",
+      "date": "2026-11-28T13:18:04+01:00",
+      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/25/261125-img-ciblage-des-associations-attaque-des-journalistes-marine-le-pen-tombe-le-masque-1.jpg",
+      "media": "Mediapart",
+      "logo": "img/Logo mediapart.png"
+    },
+    {
+      "titre": "L’affaire des fuites de Beauvau atteint le premier cercle de Marine Le Pen",
+      "lien": "https://www.mediapart.fr/journal/france/281126/l-affaire-des-fuites-de-beauvau-atteint-le-premier-cercle-de-marine-le-pen",
+      "date": "2026-11-28T13:17:56+01:00",
+      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/28/photo-par-simon-wohlfahrt-afp.jpg",
+      "media": "Mediapart",
+      "logo": "img/Logo mediapart.png"
+    },
+    {
+      "titre": "« La sécheresse les a empêchés de pousser » : les sapins de Noël français, menacés par le chaos climatique",
+      "lien": "https://reporterre.net/Le-sapin-de-Noel-francais-va-t-il-disparaitre",
+      "date": "2026-11-28T08:46:08+00:00",
+      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/img_5630-16112.jpg?1795855587",
+      "media": "Reporterre",
+      "logo": "img/reporterre.png"
+    },
+    {
+      "titre": "« On a très peur de voir fermer les petites écoles » : le plan de rénovation de Paris hérisse les parents d'élèves",
+      "lien": "https://reporterre.net/A-Paris-cinq-ecoles-pourraient-fermer-au-nom-de-l-adaptation-climatique",
+      "date": "2026-11-28T08:38:57+00:00",
+      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/jeanzaychaud-61160.jpg?1795855143",
+      "media": "Reporterre",
+      "logo": "img/reporterre.png"
+    },
+    {
+      "titre": "Le Premier ministre espagnol Pedro Sánchez défend son bilan écologique avant une élection décisive",
+      "lien": "https://reporterre.net/Le-Premier-ministre-espagnol-Pedro-Sanchez-defend-son-bilan-ecologique-avant-une-election",
+      "date": "2026-11-28T07:00:00+00:00",
+      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/pedrodzedezdzedzed-92b57.jpg?1795849201",
+      "media": "Reporterre",
+      "logo": "img/reporterre.png"
+    },
     {
       "titre": "Face à l’extrême droite, faire réseau pour continuer d’agir",
       "lien": "https://www.politis.fr/api/proxy/?articleID=528892",
@@ -10,44 +58,12 @@
       "logo": "img/channels4_profile (1).png"
     },
     {
-      "titre": "À Lille, les fermetures de l’université à répétition crispent, isolent et inquiètent les étudiants",
-      "lien": "https://www.mediapart.fr/journal/france/271126/lille-les-fermetures-de-l-universite-repetition-crispent-isolent-et-inquietent-les-etudiants",
-      "date": "2026-11-27T19:16:44+01:00",
-      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/27/261127-img-lille-les-fermetures-repetition-de-l-universite-crispent-isolent-et-inquietent-les-etudiants-2.jpg",
-      "media": "Mediapart",
-      "logo": "img/Logo mediapart.png"
-    },
-    {
-      "titre": "Dans les universités, la mobilisation tient bon, loin des projecteurs",
-      "lien": "https://www.mediapart.fr/journal/france/271126/dans-les-universites-la-mobilisation-tient-bon-loin-des-projecteurs",
-      "date": "2026-11-27T19:15:43+01:00",
-      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/27/261127-img-dans-les-universites.jpg",
-      "media": "Mediapart",
-      "logo": "img/Logo mediapart.png"
-    },
-    {
-      "titre": "Contre les blocages, le ministère veut confier l’exclusion des lycéens aux directeurs académiques",
-      "lien": "https://www.mediapart.fr/journal/france/271126/contre-les-blocages-le-ministere-veut-confier-l-exclusion-des-lyceens-aux-directeurs-academiques",
-      "date": "2026-11-27T19:10:50+01:00",
-      "image": "https://static.mediapart.fr/etmagine/default/files/2026/11/27/261127-img-confier-le-pouvoir-d-exclusion.jpg",
-      "media": "Mediapart",
-      "logo": "img/Logo mediapart.png"
-    },
-    {
       "titre": "Manifestation du 28 novembre : derrière le vernis féministe de Némesis, le racisme décomplexé",
       "lien": "https://www.politis.fr/api/proxy/?articleID=531348",
       "date": "2026-11-27T17:06:34+00:00",
       "image": "https://www.politis.fr/wp-content/uploads/2026/02/000_94ND9ZR1-383x257.jpg",
       "media": "Politis",
       "logo": "img/channels4_profile (1).png"
-    },
-    {
-      "titre": "De la moisissure pour dépolluer nos sols ? La piste prometteuse des champignons",
-      "lien": "https://reporterre.net/De-la-moisissure-pour-depolluer-nos-sols-La-piste-prometteuse-des-champignons",
-      "date": "2026-11-27T16:56:22+00:00",
-      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/micromycete_-_lubem_1_-b9e32.jpg?1795799009",
-      "media": "Reporterre",
-      "logo": "img/reporterre.png"
     },
     {
       "titre": "Malgré l’ONU, la justice prolonge à huis clos la détention provisoire du Palestinien Ali",
@@ -66,28 +82,12 @@
       "logo": "img/Logo-street-press.png"
     },
     {
-      "titre": "« Inspection citoyenne » chez Syngenta : 4 pesticides interdits retrouvés",
-      "lien": "https://reporterre.net/Inspection-citoyenne-chez-Syngenta-4-pesticides-interdits-retrouves",
-      "date": "2026-11-27T15:02:43+00:00",
-      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/23112026_nmn_7265_action_faucheursogm__c_nnoman-2-4aba4.jpg?1795791826",
-      "media": "Reporterre",
-      "logo": "img/reporterre.png"
-    },
-    {
       "titre": "Avant la grève du 1er décembre, le patronat refuse toujours d'augmenter les salaires",
       "lien": "https://basta.media/Avant-greve-du-1er-decembre-patronat-refuse-toujours-augmenter-salaires",
       "date": "2026-11-27T15:00:00+00:00",
       "image": "https://basta.media/local/cache-vignettes/L150xH100/hl_pbatard_3399857-b4d16.jpg?1795791633",
       "media": "Basta !",
       "logo": "img/basta.png"
-    },
-    {
-      "titre": "Les paysans se battent pour l'argent de la PAC, mais celui-ci risque de servir l'agriculture intensive",
-      "lien": "https://reporterre.net/Les-paysans-se-battent-pour-l-argent-de-la-PAC-mais-celui-ci-risque-de-servir-l",
-      "date": "2026-11-27T14:00:00+00:00",
-      "image": "https://reporterre.net/local/cache-vignettes/L700xH467/farmxbrux-d63d1.jpg?1795788001",
-      "media": "Reporterre",
-      "logo": "img/reporterre.png"
     },
     {
       "titre": "Reporters sans frontières demande la suspension de CNews pour un mois",
